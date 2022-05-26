@@ -67,5 +67,5 @@ jobs:
         uses: ad-m/github-push-action@master
         if: (steps.commit-html.outputs.exit_code == 0 || steps.commit-pdf.outputs.exit_code == 0) && ${{ github.event_name != 'pull_request' }}
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
