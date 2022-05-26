@@ -38,7 +38,7 @@ jobs:
           output_format: pdf
           output_filepath: docs/${{ env.PDF_FILE }}
       - name: Commit published HTML
-        id: commit
+        id: commit-html
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -50,7 +50,7 @@ jobs:
             echo ::set-output name=exit_code::1
           fi
       - name: Commit published PDF
-        id: commit
+        id: commit-pdf
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -63,7 +63,7 @@ jobs:
           fi
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: steps.commit.outputs.exit_code == 0
+        if: steps.commit-html.outputs.exit_code == 0 || steps.commit-pdf.outputs.exit_code == 0
         with:
           github_token: ${{ secrets.GH_TOKEN }}
           branch: ${{ github.ref }}
