@@ -23,14 +23,14 @@ jobs:
     needs: check_run
     steps:
       - uses: actions/checkout@v2
-      - uses: AlexDumanskiy/action-jsonresume-export@v1
+      - uses: AlexDumanskiy/action-jsonresume-export@v2
         name: Export resume as HTML
         with:
           theme: paper
           resume_filepath: resume.json
           output_format: html
           output_filepath: docs/index.html
-      - uses: AlexDumanskiy/action-jsonresume-export@v1
+      - uses: AlexDumanskiy/action-jsonresume-export@v2
         name: Export resume as PDF
         with:
           theme: paper
@@ -44,8 +44,19 @@ jobs:
           git config --local user.name "GitHub Action"
           if [ -n "$(git status --porcelain docs/index.html)" ]; then
             git add docs/index.html
-            git add docs/${{ env.PDF_FILE }}
             git commit -m "[ci skip] chore: update resume page"
+            echo ::set-output name=exit_code::0
+          else
+            echo ::set-output name=exit_code::1
+          fi
+      - name: Commit published PDF
+        id: commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [ -n "$(git status --porcelain docs/${{ env.PDF_FILE}} )" ]; then
+            git add docs/${{ env.PDF_FILE }}
+            git commit -m "[ci skip] chore: update resume pdf"
             echo ::set-output name=exit_code::0
           else
             echo ::set-output name=exit_code::1
