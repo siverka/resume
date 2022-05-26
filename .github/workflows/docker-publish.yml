@@ -23,14 +23,14 @@ jobs:
     needs: check_run
     steps:
       - uses: actions/checkout@v2
-      - uses: AlexDumanskiy/action-jsonresume-export@e0ce16d0beb7f989a233a03be74acaa091e4c624
+      - uses: AlexDumanskiy/action-jsonresume-export@6be0a3c5a68a5d71f595b2ab199b1ad5d6263dc8
         name: Export resume as HTML
         with:
           theme: paper
           resume_filepath: resume.json
           output_format: html
           output_filepath: docs/index.html
-      - uses: AlexDumanskiy/action-jsonresume-export@e0ce16d0beb7f989a233a03be74acaa091e4c624
+      - uses: AlexDumanskiy/action-jsonresume-export@6be0a3c5a68a5d71f595b2ab199b1ad5d6263dc8
         name: Export resume as PDF
         with:
           theme: paper
