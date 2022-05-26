@@ -23,14 +23,14 @@ jobs:
     needs: check_run
     steps:
       - uses: actions/checkout@v2
-      - uses: AlexDumanskiy/action-jsonresume-export@v1
+      - uses: AlexDumanskiy/action-jsonresume-export@c666d7a7c9ff499af97c1a1ba962f06e6263f95d
         name: Export resume as HTML
         with:
           theme: paper
           resume_filepath: resume.json
           output_format: html
           output_filepath: docs/index.html
-      - uses: AlexDumanskiy/action-jsonresume-export@v1
+      - uses: AlexDumanskiy/action-jsonresume-export@c666d7a7c9ff499af97c1a1ba962f06e6263f95d
         name: Export resume as PDF
         with:
           theme: paper
@@ -38,21 +38,34 @@ jobs:
           output_format: pdf
           output_filepath: docs/${{ env.PDF_FILE }}
       - name: Commit published HTML
-        id: commit
+        if: ${{ github.event_name != 'pull_request' }}
+        id: commit-html
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           if [ -n "$(git status --porcelain docs/index.html)" ]; then
             git add docs/index.html
-            git add docs/${{ env.PDF_FILE }}
             git commit -m "[ci skip] chore: update resume page"
+            echo ::set-output name=exit_code::0
+          else
+            echo ::set-output name=exit_code::1
+          fi
+      - name: Commit published PDF
+        if: ${{ github.event_name != 'pull_request' }}
+        id: commit-pdf
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if [ -n "$(git status --porcelain docs/${{ env.PDF_FILE}} )" ]; then
+            git add docs/${{ env.PDF_FILE }}
+            git commit -m "[ci skip] chore: update resume pdf"
             echo ::set-output name=exit_code::0
           else
             echo ::set-output name=exit_code::1
           fi
       - name: Push changes
         uses: ad-m/github-push-action@master
-        if: steps.commit.outputs.exit_code == 0
+        if: ${{ (steps.commit-html.outputs.exit_code == 0 || steps.commit-pdf.outputs.exit_code == 0) && ( github.event_name != 'pull_request' ) }}
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
