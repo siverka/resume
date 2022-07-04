@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Alexander Dumanskiy",
-    "label": "Engineering Manager",
+    "name": "Maria Dumanskaya",
+    "label": "QA Engineer",
     "image": "",
-    "email": "a.dumanskiy@hotmail.com",
-    "phone": "+79219145977",
+    "email": "masha.dumanskaya@gmail.com",
+    "phone": "+79811248428",
     "url": "",
-    "summary": "Fifteen years in the tech industry sharpening my software development, leadership, and people management skills at market leading companies. Proven track record of defining and delivering exceptional products in dynamic environments while maintaining close stakeholder participation.",
+    "summary": "Very brilliant QA team lead and engineer's summary goes here",
     "location": {
       "address": "",
       "postalCode": "",
@@ -19,58 +19,56 @@
   "work": [
     {
       "name": "AnyLogic",
-      "position": "Head of AnyLogic 9 & Cloud Development",
+      "position": "Head of QA Team",
       "url": "https://the.anylogic.company",
       "startDate": "2019",
-      "endDate": "",
-      "summary": "Manage a combined team of 20 developers, QA and DevOps engineers. Defining and perfecting product roadmaps in line with company business strategies.",
-      "highlights": [
-        "Introduced an inter-project Gantt chart planning system to best deliver goals and a short-cycle feedback to stakeholders",
-        "Hired brilliant engineers and consolidated the team to improve development efficiency. Nurtured several developers into teams leaders",
-        "Instituted automated CI/CD cycle, bringing development and testing closer to production.",
-        "Redefined code quality, infrastructure, and business values of the Anylogic Cloud product, greatly improving customer acknowledgment and market success."
-      ]
-    },
-    {
-      "name": "DELL EMC",
-      "position": "Senior Software Engineer",
-      "url": "https://www.dell.com",
-      "startDate": "2013",
-      "endDate": "2019",
-      "summary": "Performed Services development and architecture design of a distributed data storage system in Java and C++, including high-load performance-oriented block level network IO service.",
-      "highlights": [
-        "Worked with Linux kernel in matters of block IO, networking, and security. Delivered simple patches for the file system driver.",
-        "Supported a low-level service in C, working with hard drives via SATA and SMART to mitigate disk health issues.",
-        "Maintained two internal Linux distributions – created services, packages, managed configuration, installation, recovery, etc.",
-        "Solved a huge amount of customer escalations working on-call shifts in collaboration with Support team.",
-        "Created and co-authored multiple software patents."
-      ]
-    },
-    {
-      "name": "JSCB Ruscobank",
-      "position": "Head of System Administration Team",
-      "url": "http://ruscobank.ru",
-      "startDate": "2006",
-      "endDate": "2013",
+      "endDate": "2022",
       "summary": "",
       "highlights": [
-        "Built a comprehensive tech stack from scratch, including internal banking software, databases, and a huge variety of infrastructure services with a backbone built solely on Linux.",
-        "Implemented an inexpensive and redundant HA virtualization cluster solution.",
-        "Developed a terminal server for thin client workstations focused on cost-efficiency and security.",
-        "Raised a team of System Engineers, polished internal work processes – user access management, system administration, backup and disaster recovery.",
-        "Minimized downtime of all services, crafted a state-of-art solution that worked flawlessly for many years and passed multiple government audits."
+      ]
+    },
+    {
+      "name": "ALM Works",
+      "position": "QA Engineer",
+      "url": "https://www.almworks.com",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "",
+      "highlights": [
+        "Manual functional, regression and exploratory testing of web applications (add-ons for Jira)",
+        "Analysis and test design for functionalities under test",
+        "Working with bugs: localization, creating bug reports, verification of fixes",
+        "Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English",
+        "Working in SCRUM team"
+      ]
+    },
+    {
+      "name": "AnyLogic",
+      "position": "QA Engineer",
+      "url": "http://the.anylogic.company",
+      "startDate": "2014",
+      "endDate": "2018",
+      "summary": "",
+      "highlights": [
+        "Test planning, creating check-lists",
+        "Manual testing of new functionality, regression testing",
+        "Web application and desktop simulation modelling IDE testing",
+        "Communication with developer team",
+        "Participation in making of tasks list for the next release",
+        "Introduced and maintained the testing process in the project (was solely responsible for all test activities)",
+        "Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Management Technologies and Economics",
-      "url": "https://en.spbume.ru/en/",
-      "area": "Finance and Credit",
-      "studyType": "Specialist",
+      "institution": "St. Petersburg State University, Saint Petersburg",
+      "url": "https://spbu.ru",
+      "area": "Statistical Modelling, Applied Mathematics and Informatics",
+      "studyType": "",
       "startDate": "",
-      "endDate": "2009",
+      "endDate": "2012",
       "score": "",
       "courses": []
     }
@@ -80,26 +78,15 @@
   "publications": [],
   "skills": [
     {
-      "name": "Leadership",
+      "name": "Testing",
       "level": "",
       "keywords": [
-        "Lead and nurture teams",
-        "Work in diverse teams across the globe",
-        "Hire engineers and conduct job interviews"
       ]
     },
     {
-      "name": "Tech skills",
+      "name": "Analytical skills",
       "level": "",
       "keywords": [
-        "Building distributed systems",
-        "JIRA, Confluence, git, CI/CD",
-        "Orchestration at scale: Ansible, Puppet, cloud-init",
-        "In-depth Linux knowledge: kernel, packages, scripting, network, security, etc",
-        "Containerization with Docker, k18s",
-        "Java, C++, Python, Bash",
-        "Databases: Postgres, Mysql/Mariadb, Oracle",
-        "AWS"
       ]
     }
   ],
