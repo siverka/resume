@@ -80,13 +80,13 @@
     {
       "name": "Testing",
       "level": "",
-      "keywords": [
+      "keywords": ["Test Design", "Test Plans"
       ]
     },
     {
-      "name": "Analytical skills",
+      "name": "Technical Skills",
       "level": "",
-      "keywords": [
+      "keywords": ["git", "Java", "Python", "Jira"
       ]
     }
   ],
