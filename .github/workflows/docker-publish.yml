@@ -33,7 +33,7 @@ jobs:
       - uses: AlexDumanskiy/action-jsonresume-export@c666d7a7c9ff499af97c1a1ba962f06e6263f95d
         name: Export resume as PDF
         with:
-          theme: paper
+          theme: material
           resume_filepath: resume.json
           output_format: pdf
           output_filepath: docs/${{ env.PDF_FILE }}
