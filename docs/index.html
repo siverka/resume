@@ -1,608 +1,209 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <title>Maria Dumanskaya</title>
-  <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-  <style>body, html {
-  padding-top:2.5em;
-  margin:0;
-  background-color:#fafafa;
-}
-
-.note {
-  display:block;
-  position: absolute;
-  top:10px;
-  left:10px;
-
-  font-family: "Open Sans";
-  font-size: 0.6em;
-}
-
-.new {
-  background-color: #81C784;
-
-  border: 1px solid #757575;
-  padding: 1px;
-  border-radius: 4px;
-
-}
-
-/* Header */
-
-header {
-  width:100%;
-  vertical-align: middle;
-  text-align: center;
- 
-}
-
-.header-content {
-  display: inline-block;
-}
-
-.pic {
-  margin: 0 auto;
-  margin-top:-2.5em;
-  
-  border-radius:10em;
-  height:4em;
-  width:4em;
-  
-  border: 2px solid #e0e0e0;
-  transition : all 0.5s linear;
-  
-}
-
-@-webkit-keyframes wiggle {
-  0%   {
-    transform: rotate(0deg);
-  }
-  25%  {
-    transform: rotate(-30deg);
-  }
-  50%  {
-    transform: rotate(15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.pic:hover {
-  /*Webkit fix*/
-  -webkit-transform: translateZ(0);
-  
-  cursor:pointer;
-  
-  -webkit-animation: wiggle 0.7s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-}
-
-.header-text {
-  margin-top:0.5em;
-  margin-left:1em;
-}
-
-header p {
-  text-align:center;
-  font-family: "Merriweather";
-  
-  margin:0;
-  
-  color: #212121;
-}
-
-.first-name {
-   font-size: 1.05em;
-}
-
-.subtitle {
-  font-family: "Merriweather";
-  padding-top:.3em;
-  font-size:0.55em;
-  font-weight:500;
-  color: #424242;
-}
-
-/* Information */
-
-.paper {
-  margin: 0 auto;
-  margin-bottom:1em;
-  
-  background-color:white;
-  width:60%;
-  
-  padding:0.5em 0 0.5em 0;
-  
-  border-top: 1px solid #e0e0e0;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  border-bottom: 3px solid #e0e0e0;
-  border-radius:3px;
-}
-
-@media(max-width:992px) {
-  .paper {
-    width:80%;
-  }
-}
-
-/* Content Part */
-
-.content-wrapper {
-  padding-right:7.25%;
-}
-
-.content {
-  display:table;
-  width:100%;
-  
-  padding-top:1.5em;
-  
-  /*border-top: 1px solid #eeeeee;*/
-}
-
-.content:last-child {
-  margin-bottom: 2em;
-}
-
-body > div > article > div > section:last-child {
-  padding-bottom:1.5em;
-}
-
-.row {
-    display:table-row;
-}
-.row div {
-    display:table-cell;
-}
-
-.content-cat {
-  font-family: "Merriweather";
-  font-variant:small-caps;
-  font-weight:300;
-  letter-spacing: 1px;
-  
-  color: #212121;
-  
-  font-size:0.975em;
-  
-  text-align:center;
-  vertical-align:middle;
-
-  padding-left:6.66%;
-  width:30%;
-}
-
-.content-cat p {
-  font-size:0.55em;
-  font-weight:600;
-  
-  margin-bottom:0;
-}
-
-.content-text {
-  border-left:1px solid #e0e0e0;
-  transition: border 0.66s ease-in;
-}
-
-.big-text {
-  vertical-align:top;
-}
-
-.content-text ul {
-  padding:0;
-  margin:0;
-  margin-top:0.15em;
-  
-  width:85%;
-  margin-left:1.5em;
-}
-
-.content-text ul:last-child {
-  margin-bottom:0.5em;
-}
-
-.content-text ul li {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  display:inline-block;
-  
-}
-
-.content-text ul li:first-child {
-  width:35%;
-  
-  color: #424242;
-  
-  font-weight:600;
-}
-
-.content-text ul li a, div.content-text.work-listing.education-listing > p > strong > a {
-  text-decoration: none;
-  color: #0277bd;
-}
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
-}
-
-.work-listing p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  
-  color: #424242;
-  
-  margin-left:2em;
-  margin-top:0.45em;
-  margin-bottom: 0.45em;
-}
-
-div.content-text.work-listing.education-listing > p:nth-child(2) {
-  margin-top:0.25em;
-}
-
-.work-listing .highlight {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
-  
-  color: #424242;
-  
-  margin-left:3.25em;
-  
-  list-style-type: disc;
-  list-style-position: inside;
-  display: list-item;
-  
-}
-
-.education-listing > .heading {
-  font-weight:600;
-  
-  margin-top:0.75em;
-  margin-left:2em;
-}
-
-.education-listing > .highlight {
-  margin-left:3.25em;
-}
-
-.highlight {
-  transition: border .33s ease-in;
-}
-
-.profiles-listing ul li, .profiles-listing ul li:first-child {
-  width:32%;
-  font-weight: normal;
-}
-
-.work-content, .education-content {
-  padding-top: .75em;
-  page-break-inside: avoid;
-}
-
-section.content.education-content > div > div.content-cat {
-  vertical-align: top;
-}
-
-div.content-text.skills-listing > p {
-  font-family: "Open Sans";
-  font-size:0.7em;
-  font-weight:400;
-
-  margin-left: 2em;
-  margin-top: 0.45em;
-  margin-bottom: 0.45em;
-}
-
-div.content-text.skills-listing > p > {
-  color:#212121;
-}
-
-@media screen and (max-width: 600px) {
-  body, html {
-    padding-top: 30px;
-  }
-
-  .paper {
-    width:95%;
-  }
-
-  .row div {
-    display: block;
-  }
-
-  .content-cat {
-    width: 100%;
-  }
-
-  .content-text ul li {
-    width: 100%;
-  }
-
-  .content-text ul li:first-child {
-    width: 100%;
-  }
-  
-  .education-listing > .highlight {
-    margin-left: 30px;
-  }
-}
-</style>
-  <style media="print">
-body, html {
-  background-color: white;
-  padding-top: 1.5em;
-  font-size: 104%;
-}
-
-.paper {
-  width:100%;
-  border: 0;
-
-  padding-top: 0;
-}
-
-header p {
-  font-size: 1.3em;
-}
-
-.subtitle {
-  font-size: 0.7em;
-}
-
-.header-pic {
-  float:left;
-}
-
-.profiles {
-  display:none;
-}
-
-.content {
-  page-break-inside:avoid; 
-  page-break-after:auto;
-}
-
-.header-text {
-  float:left;
-  margin-top: -1.6em;
-}
-
-.content-wrapper > .content:first-child {
-  padding-top: 2em;
-}
-
-.content:last-child {
-  padding-bottom: 0;
-}
-
-.content-cat {
-  width:33%;
-  color:black;
-  text-align: left;
-}
-
-.content-cat p {
-  font-size:0.6em;
-  font-weight: 600;
-}
-
-header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
-  color:black;
-}
-
-.content-text.skills-listing > ul > li span, .subtitle {
-  color:#212121;
-}
-
-.content-text ul:last-child {
-  margin-bottom: 0.25em;
-}
-
-.content-text ul li:first-child {
-  width:50%;
-}
-
-.profiles-listing ul li:first-child {
-  width:32%;
-}
-
-div.content-text.skills-listing > ul > li {
-  width:33%;
-}
-
-.work-listing p {
-  margin-bottom: 0.1em;
-}
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:300);
 
-div.content-text.skills-listing > ul > li > p {
-  margin-top: 0.4em;
-  margin-bottom: 0.5em;
+body {
+	font-family: 'Open Sans', 'Helvetica Neue Light', sans-serif;
+	font-weight: 300;
+	min-width: 800px;
 }
 
-div.content-text.skills-listing > ul > li {
-  padding-left: 1.5em;
+h1,h2,h3 {
+	font-family: 'Oswald', sans-serif;
 }
 
-div.content-text.skills-listing > ul > li:first-child {
-  padding-left: 2em;
+h1 {
+	font-weight: 700;
 }
 
-.note {
-  display:none;
+h2,h3 {
+	font-weight: 300;
 }
-
-.content-text:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
-}
-
-.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.big-text {
-  padding-top: 0;
-}
-</style>
-</head>
-<body>
-  <div class="resume-wrapper">
-    <article class="paper">
-        <header>
-          <div class="header-content">
-            <div class="header-text">
-              <p>
-                Maria Dumanskaya
-              </p>
-              <p class="subtitle">QA Engineer</p>
-            </div>
-          </div>
-        </header>
-        <div class="content-wrapper">
-          <!-- CONTACT -->
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Contact
-              </div>
-              <div class="content-text">
-                  <ul>
-                    <li>Email</li>
-                    <li><a href="mailto:masha.dumanskaya@gmail.com">masha.dumanskaya@gmail.com</a></li>
-                  </ul>
-                  <ul>
-                    <li>Phone</li>
-                    <li>+79811248428</li>
-                  </ul>
-              </div>
-            </div>
-          </section>
-
-              <section class="content">
-                <div class="row">
-                  <div class="content-cat">
-                    Location
-                  </div>
-                  <div class="content-text">
-                      <ul>
-                        <li>Region</li>
-                        <li>Russia</li>
-                      </ul>
-                  </div>
-                </div>
-              </section>
-
-          <section class="content">
-            <div class="row">
-              <div class="content-cat">
-                Professional Skills Summary
-              </div>
-              <div class="content-text skills-listing">
-                  <p>
-                    <span class="name">
-                        <strong>
-                          Testing:
-                        </strong>
-                    </span>
-                  </p>
-                  <p>
-                    <span class="name">
-                        <strong>
-                          Analytical skills:
-                        </strong>
-                    </span>
-                  </p>
-              </div>
-            </div>
-          </section>
-
-
-        
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Work  Experience
-                          <p>2019 to 2022</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>Head of QA Team:</strong>
-                        </p>
-                    </div>
-                  </div>
-                </section>
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>2018 to 2019</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>QA Engineer:</strong>
-                        </p>
-                          <p class="highlight">Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</p>
-                          <p class="highlight">Analysis and test design for functionalities under test</p>
-                          <p class="highlight">Working with bugs: localization, creating bug reports, verification of fixes</p>
-                          <p class="highlight">Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</p>
-                          <p class="highlight">Working in SCRUM team</p>
-                    </div>
-                  </div>
-                </section>
-                <section class="content work-content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                          <p>2014 to 2018</p>
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p>
-                            <strong>QA Engineer:</strong>
-                        </p>
-                          <p class="highlight">Test planning, creating check-lists</p>
-                          <p class="highlight">Manual testing of new functionality, regression testing</p>
-                          <p class="highlight">Web application and desktop simulation modelling IDE testing</p>
-                          <p class="highlight">Communication with developer team</p>
-                          <p class="highlight">Participation in making of tasks list for the next release</p>
-                          <p class="highlight">Introduced and maintained the testing process in the project (was solely responsible for all test activities)</p>
-                          <p class="highlight">Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</p>
-                    </div>
-                  </div>
-                </section>
-
-                <section class="content">
-                  <div class="row">
-                    <div class="content-cat big-text">
-                        Education
-                    </div>
-                    <div class="content-text work-listing education-listing">
-                          <p style="margin-top:0;" class="heading">St. Petersburg State University, Saint Petersburg</p>
-                        <p class="highlight">
-                          <i>Statistical Modelling, Applied Mathematics and Informatics </i>
-                        </p>
-                    </div>
-                  </div>
-                </section>
-
-
-
-
-
-
-            <!-- PROFILES -->
-
 
+main {
+	padding: 20px 0;
+}
+
+img {
+	max-width: 115px;
+	border-radius: 5px;
+}
+
+.vr {
+	display: inline;
+	margin: 0.5em 0px;
+	width: 1px;
+	height: 1em;
+	border-left: 1px solid gray;
+}
+
+
+section#header img {
+	padding: 5px;
+	border-radius: 10px
+}
+
+section#header .title .vr {
+	display: none;;
+}
+
+section#skills .details {
+	-moz-column-count: 2;
+	-moz-column-gap: 0px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 0px;
+	column-count: 2;
+	column-gap: 0px;
+}
+
+.details h4 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.date {
+	font-size: 15px;
+	line-height: 24px;
+}
+.website {
+	line-height: 18px;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0px;
+		margin-left: -25px;
+}
+
+h5 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+.col-xs-9 {
+    line-height: 1.5;
+}
+
+		</style>
+	</head>
+	<body>
+		<div class='container-fluid'>
+			<main class="row">
+			<div class="col-xs-10 col-xs-offset-1">
+				<section id='header' class="row">
+				<div class="col-xs-9 title">
+					<h1>
+						Maria Dumanskaya
+					</h1>
+					<h2 class='vr'></h2>
+					<h2>QA Engineer</h2>
+				</div>
+				<div class="col-xs-3 text-center photo">
+        <img data-src="holder.js/100x100" alt="Maria Dumanskaya" src="" itemprop="image">
+				</div>
+				</section>
+				<hr style="color: #ccc; height: 4px;" />
+				<section id='about' class="row">
+				<header class="col-xs-3">
+				<h3>Over mij</h3>
+				</header>
+				<div class="col-xs-9">
+					<p>Very brilliant QA team lead and engineer&#39;s summary goes here</p>
+					<strong>Telefoonnummer:</strong> +79811248428 <br />
+					<strong>E-mailadres:</strong> <a href="mailto:masha.dumanskaya@gmail.com">masha.dumanskaya@gmail.com</a><br />
+				</div>
+				</section>
+				<hr />
+				<section id='work' class="row">
+				<header class="col-xs-3">
+				<h3>Werk</h3>
+				</header>
+				<div class="col-xs-9">
+					<div class="details">
+						<h3><span class="date pull-right">2019 - 2022</span></h3>
+						<strong>Head of QA Team</strong>
+						<p>
+            <br>
+            </p>
+						<ul>
+						</ul>
+						<h3><span class="date pull-right">2018 - 2019</span></h3>
+						<strong>QA Engineer</strong>
+						<p>
+            <br>
+            </p>
+						<ul>
+							<li>Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</li>
+							<li>Analysis and test design for functionalities under test</li>
+							<li>Working with bugs: localization, creating bug reports, verification of fixes</li>
+							<li>Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</li>
+							<li>Working in SCRUM team</li>
+						</ul>
+						<h3><span class="date pull-right">2014 - 2018</span></h3>
+						<strong>QA Engineer</strong>
+						<p>
+            <br>
+            </p>
+						<ul>
+							<li>Test planning, creating check-lists</li>
+							<li>Manual testing of new functionality, regression testing</li>
+							<li>Web application and desktop simulation modelling IDE testing</li>
+							<li>Communication with developer team</li>
+							<li>Participation in making of tasks list for the next release</li>
+							<li>Introduced and maintained the testing process in the project (was solely responsible for all test activities)</li>
+							<li>Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</li>
+						</ul>
+					</div>
+				</div>
+				</section>
+				<hr />
+
+				<section id='education' class="row">
+				<header class="col-xs-3">
+				<h3>Onderwijs</h3>
+				</header>
+				<div class="col-xs-9">
+					<div class="details">
+						<h3>St. Petersburg State University, Saint Petersburg<span class="date pull-right">2012</span></h3>
+						<strong>Statistical Modelling, Applied Mathematics and Informatics</strong>
+						<p></p>
+					</div>
+				</div>
+				</section>
+				<hr />
+        <section id='languages' class="row">
+				<header class="col-xs-3">
+				<h3>Vaardigheden</h3>
+				</header>
+				<div class="col-xs-9">
+					<div class="details">
+          <ul>
+            <li>
+            Testing <span class="pull-right"></span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+            Analytical skills <span class="pull-right"></span>
+            </li>
+          </ul>
+					</div>
         </div>
-    </article>
-  </div>
-</body>
+				</section>
+				<hr />
+				<footer></footer>
+			</div>
+			</main>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+	</body>
 </html>
