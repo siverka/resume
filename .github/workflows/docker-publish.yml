@@ -9,7 +9,7 @@ on:
     branches: [ main ]
 
 env:
-  PDF_FILE: 'AlexDumanskiy.pdf'
+  PDF_FILE: 'MariaDumanskaya.df'
 
 jobs:
   check_run:
