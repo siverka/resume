@@ -18,8 +18,8 @@
   },
   "work": [
     {
-      "name": "AnyLogic",
-      "position": "Head of QA Team",
+      "company": "AnyLogic",
+      "website": "Head of QA Team",
       "url": "https://the.anylogic.company",
       "startDate": "2019",
       "endDate": "2022",
@@ -28,9 +28,9 @@
       ]
     },
     {
-      "name": "ALM Works",
+      "company": "ALM Works",
       "position": "QA Engineer",
-      "url": "https://www.almworks.com",
+      "website": "https://www.almworks.com",
       "startDate": "2018",
       "endDate": "2019",
       "summary": "",
@@ -43,9 +43,9 @@
       ]
     },
     {
-      "name": "AnyLogic",
+      "company": "AnyLogic",
       "position": "QA Engineer",
-      "url": "http://the.anylogic.company",
+      "website": "http://the.anylogic.company",
       "startDate": "2014",
       "endDate": "2018",
       "summary": "",
