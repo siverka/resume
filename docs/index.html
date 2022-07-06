@@ -1,274 +1,304 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> </title>
-		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
-		<style>
-			@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald:300);
 
-body {
-	font-family: 'Open Sans', 'Helvetica Neue Light', sans-serif;
-	font-weight: 300;
-}
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, user-scalable=no, minimal-ui'>
 
-h1,h2,h3 {
-	font-family: 'Oswald', sans-serif;
-}
+	<title>Maria Dumanskaya</title>
 
-h1 {
-	font-weight: 700;
-}
-
-h2,h3 {
-	font-weight: 300;
-}
-
-main {
-	padding: 20px 0;
-}
-
-.vr {
-	display: inline;
-	margin: 0.5em 0px;
-	width: 1px;
-	height: 1em;
-	border-left: 1px solid gray;
-}
-
-
-section#header img {
-	padding: 20px;
-}
-
-section#header .title .vr {
-	display: none;;
-}
-	
-@media(min-width:768px), print {
-	section#header img {
-		width: 4em;
-		height: 4em;
-		padding: 0px;
-		float: right;
-	}
-	section#header .title h1,h2 {
-		display: inline !important;
-		padding-right: 20px;
-	}
-	section#header .title .vr {
-		display: inline;
-	}
-}
-
-section#skills .details {
-	-moz-column-count: 2;
-	-moz-column-gap: 0px;
-	-webkit-column-count: 2;
-	-webkit-column-gap: 0px;
-	column-count: 2;
-	column-gap: 0px;
-}
-
-.details h4 {
-	margin-top: 20px;
-	margin-bottom: 5px;
-}
-.date {
-	font-size: 15px;
-	line-height: 24px;
-}
-.website {
-	line-height: 18px;
-}
-
-
-/* Fix for print */
-@media print {
-
-	a[href]:after {
-		content: none !important;
-	}
-
+	<style>
 	body {
-		font-size: 9px;
-	}
-	h1 {
-		font-size: 31px;
-	}
-	h2 {
-		font-size: 25px;
-	}
-	h3 {
-		font-size: 19px;
-	}
-
-	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-		float: left;
-	}
-	.col-sm-12 {
-		width: 100%;
-	}
-	.col-sm-11 {
-		width: 91.66666666666666%;
-	}
-	.col-sm-10 {
-		width: 83.33333333333334%;
-	}
-	.col-sm-9 {
-		width: 75%;
-	}
-	.col-sm-8 {
-		width: 66.66666666666666%;
-	}
-	.col-sm-7 {
-		width: 58.333333333333336%;
-	}
-	.col-sm-6 {
-		width: 50%;
-	}
-	.col-sm-5 {
-		width: 41.66666666666667%;
-	}
-	.col-sm-4 {
-		width: 33.33333333333333%;
-	}
-	.col-sm-3 {
-		width: 25%;
-	}
-	.col-sm-2 {
-		width: 16.666666666666664%;
-	}
-	.col-sm-1 {
-		width: 8.333333333333332%;
-	}
-
+  background: #EEEEEE;
+  font: 12px "Times New Roman", Times, sans-serif;
+  line-height: 1.4;
+  margin: 40px 0;
+}
+em {
+  color: #999;
+}
+p {
+  line-height: 1.4;
+}
+ul {
+  margin-bottom: 0;
+}
+li {
+  margin-bottom: 2px;
+}
+a {
+  text-decoration: none;
 }
 
-		</style>
+#resume {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 80px 100px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 4px #aaa;
+  -webkit-box-shadow: 2px 2px 4px #aaa;
+}
 
+.coursesList {
+  width: 28%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.largeFont {
+  font-size: 20px;
+}
+
+.smallFont {
+  font-size: 12px;
+}
+
+.sectionBlock {
+  display: flex;
+  width: 100%;
+}
+
+.sectionName {
+  width: 18%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent {
+  width: 80%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.sectionContent ul {
+  padding-left: 20px;
+  margin-top: 6px;
+  list-style-type: circle;
+}
+
+.sectionContent .title {
+  font-weight: bold;
+}
+
+.sectionContent .date {
+  float: right;
+}
+
+.sectionContent .separator {
+  height: 14px;
+}
+
+.sectionLine {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #CFCFCF;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.summary {
+  margin-top: 6px;
+}
+
+.skillBlock {
+  margin-bottom: 4px;
+}
+
+.jobBlock {
+  page-break-inside: avoid;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 40em) {
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0.5em 1em;
+    border: none;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .sectionContent .date {
+    padding-right: 2em;
+  }
+  .sectionName {
+    width: auto;
+  }
+  .largeFont {
+    font-size: 20px;
+  }
+  .smallFont {
+    font-size: 14px;
+  }
+}
+
+@media print {
+  #resume {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0px 0px;
+    border: 0px;
+    background: #fff;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+	</style>
 
 	</head>
 	<body>
-		<div class='container-fluid'>
-			<main class="row">
-			<div class="col-sm-12 col-md-10 col-md-offset-1">
-				<section id='header' class="row">
-				<div class="col-sm-9 col-xs-12 title">
-					<h1>Maria Dumanskaya</h1>
-					<h2 class='vr'></h2>
-					<h2>QA Engineer</h2>
-				</div>
-				<div class="col-sm-3 col-xs-12 text-center photo">
-					<img class="media-object img-circle" data-src="holder.js/64x64" alt="64x64" src="&#x2F;&#x2F;www.gravatar.com&#x2F;avatar&#x2F;65a0f1d77586b7b0d56ffafba68dc9a8?size=100&amp;rating=g&amp;default=blank">
-				</div>
-				</section>
-				<hr style="color: #ccc; height: 4px;" />
-				<section id='about' class="row">
-				<header class="col-sm-3">
-				<h3>About</h3>
-				</header>
-				<div class="col-sm-9">
-					<p>Very brilliant QA team lead and engineer&#39;s summary goes here</p>
-					<strong>Phone:</strong> +79811248428 <br />
-					<strong>Email:</strong> <a href="mailto:masha.dumanskaya@gmail.com">masha.dumanskaya@gmail.com</a><br />
-				</div>
-				</section>
-				<hr />
-				<section id='work' class="row">
-				<header class="col-sm-3">
-				<h3>Work Experience</h3>
-				</header>
-				<div class="col-sm-9">
-					<div class="details">
-						<h3><span class="date pull-right">2019 - 2022</span></h3>
-						<strong>Head of QA Team</strong>
-						<p></p>
-						<ul>
-						</ul>
-						<h3><span class="date pull-right">2018 - 2019</span></h3>
-						<strong>QA Engineer</strong>
-						<p></p>
-						<ul>
-							<li>Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</li>
-							<li>Analysis and test design for functionalities under test</li>
-							<li>Working with bugs: localization, creating bug reports, verification of fixes</li>
-							<li>Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</li>
-							<li>Working in SCRUM team</li>
-						</ul>
-						<h3><span class="date pull-right">2014 - 2018</span></h3>
-						<strong>QA Engineer</strong>
-						<p></p>
-						<ul>
-							<li>Test planning, creating check-lists</li>
-							<li>Manual testing of new functionality, regression testing</li>
-							<li>Web application and desktop simulation modelling IDE testing</li>
-							<li>Communication with developer team</li>
-							<li>Participation in making of tasks list for the next release</li>
-							<li>Introduced and maintained the testing process in the project (was solely responsible for all test activities)</li>
-							<li>Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</li>
-						</ul>
-					</div>
-				</div>
-				</section>
-				<hr />
 
-				<section id='education' class="row">
-				<header class="col-sm-3">
-				<h3>Education</h3>
-				</header>
-				<div class="col-sm-9">
-					<div class="details">
-						<h3>St. Petersburg State University, Saint Petersburg<span class="date pull-right">2012</span></h3>
-						<strong>Statistical Modelling, Applied Mathematics and Informatics</strong>
-						<p></p>
-					</div>
-				</div>
-				</section>
-				<hr />
-				<section id='skills' class="row">
-				<header class="col-sm-3">
-				<h3>Skills</h3>
-				</header>
-				<div class="col-sm-9">
-					<div class="details row">
-						<div class='col-sm-12'>
-							<ul>
-								<li>
-								<h4>Testing <span class="pull-right"></span></h4>
-								<ul>
-									<li>Test Design</li>
-									<li>Test Plans</li>
-								</ul>
-								</li>
-							</ul>
-						</div>
-						<div class='col-sm-12'>
-							<ul>
-								<li>
-								<h4>Technical Skills <span class="pull-right"></span></h4>
-								<ul>
-									<li>git</li>
-									<li>Java</li>
-									<li>Python</li>
-									<li>Jira</li>
-								</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				</section>
-				<hr />
-				<footer></footer>
+	<div id='resume'>
+  <div id='nameBlock' class='largeFont'>
+    <span class='name'>
+      Maria Dumanskaya,
+    </span>
+    <span class='label'>QA Engineer</span>
+  </div>
+  <div id='basicsBlock' class='smallFont'>
+    <div class='contactBlock'>
+      <span class='email'>masha.dumanskaya@gmail.com</span>
+      <span class='divider'>|</span>
+      <span class='phone'>+79811248428</span>
+        <span class='divider'>|</span>
+        <span class='address'>
+          St.Petersburg, Russia
+        </span>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+  <div id='summaryBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SUMMARY</span>
+    </div>
+    <div class='sectionContent'>
+      <span>Very brilliant QA team lead and engineer&#x27;s summary goes here</span>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
+
+  <div id='workBlock' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EXPERIENCE</span>
+    </div>
+    <div class='sectionContent'>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          , Head of QA Team
+	        </span>
+	        <span class='date'>
+	          2019 &mdash; 2022
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <div class='separator'></div>
 			</div>
-			</main>
-		</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          , QA Engineer
+	        </span>
+	        <span class='date'>
+	          2018 &mdash; 2019
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</li>
+	        <li>Analysis and test design for functionalities under test</li>
+	        <li>Working with bugs: localization, creating bug reports, verification of fixes</li>
+	        <li>Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</li>
+	        <li>Working in SCRUM team</li>
+	      </ul>
+	      <div class='separator'></div>
+			</div>
+			<div class="jobBlock">
+	      <div class='blockHeader'>
+	        <span class='title'>
+	          , QA Engineer
+	        </span>
+	        <span class='date'>
+	          2014 &mdash; 2018
+	        </span>
+	      </div>
+	      <div><a href=''></a></div>
+	      <ul class='highlights'>
+	        <li>Test planning, creating check-lists</li>
+	        <li>Manual testing of new functionality, regression testing</li>
+	        <li>Web application and desktop simulation modelling IDE testing</li>
+	        <li>Communication with developer team</li>
+	        <li>Participation in making of tasks list for the next release</li>
+	        <li>Introduced and maintained the testing process in the project (was solely responsible for all test activities)</li>
+	        <li>Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</li>
+	      </ul>
+	      
+			</div>
+    </div>
+  </div>
+  <div class='sectionLine'></div>
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+
+	<div id='education' class="sectionBlock">
+    <div class='sectionName'>
+      <span>EDUCATION</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='educationBlock'>
+        <span class='title'>
+          St. Petersburg State University, Saint Petersburg
+        </span>
+        <div class=''>
+           - Statistical Modelling, Applied Mathematics and Informatics
+        </div>
+      </div>
+      
+    </div>
+	</div>
+  <div class='sectionLine'></div>
+
+	<div id='skills' class="sectionBlock">
+    <div class='sectionName'>
+      <span>SKILLS</span>
+    </div>
+    <div class='sectionContent'>
+      <div class='skillBlock'>
+        <span class='title'>Testing:</span>
+          <span>Test Design</span>, 
+          <span>Test Plans</span>
+      </div>
+      <div class='skillBlock'>
+        <span class='title'>Technical Skills:</span>
+          <span>git</span>, 
+          <span>Java</span>, 
+          <span>Python</span>, 
+          <span>Jira</span>
+      </div>
+    </div>
+	</div>
+  <div class='sectionLine'></div>
+
+
+
 	</body>
 </html>
