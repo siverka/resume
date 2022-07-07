@@ -10,117 +10,223 @@
 	<style>
 	body {
 	background: #fff;
-	font: 15px Arial, Helvetica, sans-serif;
+	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
 	line-height: 1.4;
-	margin: 50px 0;
+	margin: 0 0;
 	margin-bottom: 100px;
 }
 em {
 	color: #999;
 }
 p {
-	line-height: 1.4;
+	line-height: 1.6;
+	font-size: 90%;
+}
+
+a {
+	color: #2C85B1;
+	text-decoration: none;
+	font-weight: 400;
 }
 ul {
 	margin-bottom: 0;
 }
 section {
-	margin-bottom: 2em;
+	margin: 1em 0 2em;
 }
 blockquote {
 	margin: 0;
 	margin-bottom: 1em;
 }
-.item {
-	margin-bottom: 1em;
-}
 #resume {
-	margin: 0 auto;
-	max-width: 480px;
-	padding: 0 20px;
+	margin: 2em 2em 2em 2.5em;
+	max-width: 760px;
 }
-#basics {
-	margin-bottom: -10px;
+
+/* Resume heading */
+.heading header { 
+
 }
-#basics h3 {
-	margin-top: 1.5em;
+
+.heading header h1 {
+	font-size: 180%;
+	margin: 0.5em 0;
+	font-weight: 600;
 }
-#basics .contact strong,
-#location strong {
-	clear: both;
-	float: left;
-	line-height: 1.3;
-	width: 120px;
+
+.heading header h2 {
+	font-size: 140%;
+	margin: 0;
+	font-weight: 400;
 }
-#profiles,
-#skills {
-	overflow: hidden;
+
+.heading header .contact .detail {
+	margin: 0 1em 0 0;
 }
-#profiles .item,
+
+.profile {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+.profile strong,
+.profile span {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+/* section / line breaks */
+section h2 {
+	font-size: 140%;
+	margin: 0 0 1em;
+	text-transform: uppercase;
+	color: #BC1B39;
+	font-weight: 400;
+}
+
+/* Experience items */
+.item {
+	margin: 0 0 1em;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #F2EBEC;
+}
+
+.item:last-child {
+	border-bottom: none;
+}
+
+
+.item header h3 {
+	margin: 0.2em 1em 0.2em 0;
+	display: inline-block;
+	font-weight: 600;
+}
+
+.item header a {
+	display: inline-block;
+}
+
+.item .position {
+	font-weight: 600;
+	font-size: 100%;
+	margin: 0.2em 1em 0.2em 0;
+}
+
+.item .startDate,
+.item .endDate {
+	color: #6B6B6B;
+}
+
+.item .highlights {
+	list-style: square;
+	font-size: 90%;
+}
+
+/* skills */
 #skills .item {
-	float: left;
-	width: 50%;
+	margin: 0.5em 0;
+	padding: 0 0 0.5em;
+	font-size: 90%;
 }
+
+#skills .item .name {
+	font-weight: 600;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0 1em 0 0;
+	width: 23%;
+	vertical-align: top;
+}
+
+#skills .item .keywords {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+}
+
+/* education */
+#education .item {
+	display: inline-block;
+	vertical-align: top;
+	width: 49.5%;
+	border-bottom: 0;
+}
+
 
 
 	</style>
+	<style media="print">
+		body { font-size: 12px; }
+	</style>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 	
 	</head>
 	<body>
 	
 	<div id="resume">
 
-	<h1>Maria Dumanskaya</h1>
-	<h2>QA Engineer</h2>
-	<section id="basics">
-		<div class="contact">
-		<div class="email">
-			<strong>Email</strong>
-			masha.dumanskaya@gmail.com
-		</div>
-		<div class="phone">
-			<strong>Phone</strong>
-			+79811248428
-		</div>
-		</div>
-		<div class="summary">
-			<p>Very brilliant QA team lead and engineer&#x27;s summary goes here</p>
-		</div>
-		<h3>Location</h3>
-		<section id="location">
-			<div class="city">
-				<strong>City</strong>
-				St.Petersburg
+	<section class="heading">
+		<header>
+			<h1>Maria Dumanskaya</h1>
+			<div class="contact">
+				<span class="detail">
+					<a href="mailto:masha.dumanskaya@gmail.com">masha.dumanskaya@gmail.com</a>
+				</span>
+				<span class="detail">
+					+79811248428
+				</span>
 			</div>
-			<div class="region">
-				<strong>Region</strong>
-				Russia
-			</div>
-		</section>
+		</header>
+
+
+		<p><p>Very brilliant QA team lead and engineer's summary goes here</p></p>
+
+
 	</section>
 
-	<section id="work">
-		<h2>Work</h2>
+	<section id="skills">
+		<h2>Skills</h2>
 		<div class="item">
-			<h3 class="name">
-				AnyLogic
-			</h3>
-			<div class="date">
-				<span class="startDate">
-					2019-10
-				</span>
-				<span class="endDate">
-					- Present
-				</span>
+			<div class="name">
+				Testing
 			</div>
-			<div class="position">
+			<div class="keywords">
+					Test Design,
+					Test Plans
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				Technical Skills
+			</div>
+			<div class="keywords">
+					git,
+					Java,
+					Python,
+					Jira
+			</div>
+		</div>
+	</section>
+
+	<section class="experience">
+		<h2>Experience</h2>
+		<section class="item">
+			<header>
+					<h3 class="name">AnyLogic</h3>
+			</header>
+			<span class="position">
 				Head of QA Team
-			</div>
-			<div class="website">
-				<a href="https://the.anylogic.company">https://the.anylogic.company</a>
-			</div>
+			</span>
+
+			<span class="startDate">
+				Oct 2019
+			</span>
+			<span class="endDate">
+				- Present
+			</span>
+
 			<div class="summary">
-				<p>Руководила QA командой. Отвечала за качество двух продуктов. Планирование. Сама тестировала</p>
+				<p><p>Руководила QA командой. Отвечала за качество двух продуктов. Планирование. Сама тестировала</p></p>
 			</div>
 			<ul class="highlights">
 				<li>Redefined company QA processes achieving a buiseness goal of focusing on product stability and comprehinsive quality control. Improved project workflows and Jira ticket culture.</li>
@@ -133,25 +239,22 @@ blockquote {
 				<li>Developed a set of automated API tests in Python.</li>
 				<li>Constant testing documentation perfection.</li>
 			</ul>
-		</div>
-		<div class="item">
-			<h3 class="name">
-				ALM Works
-			</h3>
-			<div class="date">
-				<span class="startDate">
-					2018-07
-				</span>
-				<span class="endDate">
-					- 2019-10
-				</span>
-			</div>
-			<div class="position">
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">ALM Works</h3>
+			</header>
+			<span class="position">
 				QA Engineer
-			</div>
-			<div class="website">
-				<a href="https://www.almworks.com">https://www.almworks.com</a>
-			</div>
+			</span>
+
+			<span class="startDate">
+				Jul 2018
+			</span>
+			<span class="endDate">
+				- Oct 2019
+			</span>
+
 			<ul class="highlights">
 				<li>Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</li>
 				<li>Analysis and test design for functionalities under test</li>
@@ -159,25 +262,22 @@ blockquote {
 				<li>Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</li>
 				<li>Working in SCRUM team</li>
 			</ul>
-		</div>
-		<div class="item">
-			<h3 class="name">
-				AnyLogic
-			</h3>
-			<div class="date">
-				<span class="startDate">
-					2014-08
-				</span>
-				<span class="endDate">
-					- 2018-07
-				</span>
-			</div>
-			<div class="position">
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">AnyLogic</h3>
+			</header>
+			<span class="position">
 				QA Engineer
-			</div>
-			<div class="website">
-				<a href="http://the.anylogic.company">http://the.anylogic.company</a>
-			</div>
+			</span>
+
+			<span class="startDate">
+				Aug 2014
+			</span>
+			<span class="endDate">
+				- Jul 2018
+			</span>
+
 			<ul class="highlights">
 				<li>Test planning, creating check-lists</li>
 				<li>Manual testing of new functionality, regression testing</li>
@@ -187,52 +287,35 @@ blockquote {
 				<li>Introduced and maintained the testing process in the project (was solely responsible for all test activities)</li>
 				<li>Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</li>
 			</ul>
-		</div>
+		</section>
 	</section>
 
 	
 	<section id="education">
 		<h2>Education</h2>
 		<div class="item">
-			<div class="date">
+			<header>
+					<h3 class="name">St. Petersburg State University, Saint Petersburg</h3>
+			</header>
+
+			<div class="dates">
 				<span class="endDate">
-					- 2012
+					- Jan 2012
 				</span>
 			</div>
-			<div class="institution">
-				St. Petersburg State University, Saint Petersburg
+
+			<div class="qualification">
+
+				<span class="area">
+					- Statistical Modelling, Applied Mathematics and Informatics
+				</span>
+
 			</div>
-			<div class="area">
-				Statistical Modelling, Applied Mathematics and Informatics
-			</div>
+
 		</div>
 	</section>
 	
 	
-	
-	<section id="skills">
-		<h2>Skills</h2>
-		<div class="item">
-			<div class="name">
-				Testing
-			</div>
-			<ul class="keywords">
-				<li>Test Design</li>
-				<li>Test Plans</li>
-			</ul>
-		</div>
-		<div class="item">
-			<div class="name">
-				Technical Skills
-			</div>
-			<ul class="keywords">
-				<li>git</li>
-				<li>Java</li>
-				<li>Python</li>
-				<li>Jira</li>
-			</ul>
-		</div>
-	</section>
 
 
 	
