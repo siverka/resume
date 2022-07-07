@@ -6,385 +6,237 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 	
 	<title>Maria Dumanskaya</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
+
+	<style>
+	body {
 	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
+	font: 15px Arial, Helvetica, sans-serif;
+	line-height: 1.4;
+	margin: 50px 0;
+	margin-bottom: 100px;
 }
 em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
+	color: #999;
 }
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
+p {
+	line-height: 1.4;
 }
-.container {
-	max-width: 750px;
-	padding: 0 30px;
+ul {
+	margin-bottom: 0;
 }
-.col-sm-6 {
-	margin-bottom: 10px;
+section {
+	margin-bottom: 2em;
 }
-.col-sm-12 h4 {
-	margin-top: 12px; 
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
 }
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
+.item {
+	margin-bottom: 1em;
 }
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
+#resume {
+	margin: 0 auto;
+	max-width: 480px;
+	padding: 0 20px;
 }
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
+#basics {
+	margin-bottom: -10px;
 }
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
+#basics h3 {
+	margin-top: 1.5em;
 }
-#content aside {
-	text-align: right;
-	padding-right: 30px;
+#basics .contact strong,
+#location strong {
+	clear: both;
+	float: left;
+	line-height: 1.3;
+	width: 120px;
 }
-#profiles .network {
-	text-transform: capitalize;
+#profiles,
+#skills {
+	overflow: hidden;
 }
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
+#profiles .item,
+#skills .item {
+	float: left;
+	width: 50%;
 }
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
-}
 
 	</style>
 	
 	</head>
 	<body>
 	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Maria Dumanskaya
-					</h1>
-					<h2>
-						QA Engineer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+	<div id="resume">
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">masha.dumanskaya@gmail.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">+79811248428</div>
-			</div>
-			</div>
+	<h1>Maria Dumanskaya</h1>
+	<h2>QA Engineer</h2>
+	<section id="basics">
+		<div class="contact">
+		<div class="email">
+			<strong>Email</strong>
+			masha.dumanskaya@gmail.com
 		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
+		<div class="phone">
+			<strong>Phone</strong>
+			+79811248428
+		</div>
+		</div>
+		<div class="summary">
 			<p>Very brilliant QA team lead and engineer&#x27;s summary goes here</p>
 		</div>
+		<h3>Location</h3>
+		<section id="location">
+			<div class="city">
+				<strong>City</strong>
+				St.Petersburg
+			</div>
+			<div class="region">
+				<strong>Region</strong>
+				Russia
+			</div>
+		</section>
 	</section>
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>AnyLogic</span>
-					<span class="date">
-						2019-10 — 
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://the.anylogic.company">https://the.anylogic.company</a>
-				</div>
-				<div class="position">
-					Head of QA Team
-				</div>
-				<div class="summary">
-					<p>Руководила QA командой. Отвечала за качество двух продуктов. Планирование. Сама тестировала</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Redefined company QA processes achieving a buiseness goal of focusing on product stability and comprehinsive quality control. Improved project workflows and Jira ticket culture.</li>
-					<li class="bullet">Significantly reduced the ammount of issues escalated thru customer support.</li>
-					<li class="bullet">Conducted over 30 job interviews resulted in hiring of eminent QA engineers.</li>
-					<li class="bullet">Mentored junior QA engineers, held regular one-to-one check-ins, provided support and guidence helping the team to thrive. Improved onboarding process and documentation.</li>
-					<li class="bullet">Coordinated new releases testing: issue triaging, optimal resouce allocation and utilization.</li>
-					<li class="bullet">Worked in close collaboration with development teams, participated in new feature design.</li>
-					<li class="bullet">Performed manual feature and bugfix testing, conducted regression testing.</li>
-					<li class="bullet">Developed a set of automated API tests in Python.</li>
-					<li class="bullet">Constant testing documentation perfection.</li>
-				</ul>
+	<section id="work">
+		<h2>Work</h2>
+		<div class="item">
+			<h3 class="name">
+				AnyLogic
+			</h3>
+			<div class="date">
+				<span class="startDate">
+					2019-10
+				</span>
+				<span class="endDate">
+					- Present
+				</span>
 			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>ALM Works</span>
-					<span class="date">
-						2018-07 — 2019-10
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="https://www.almworks.com">https://www.almworks.com</a>
-				</div>
-				<div class="position">
-					QA Engineer
-				</div>
-				<div class="summary">
-					<p></p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</li>
-					<li class="bullet">Analysis and test design for functionalities under test</li>
-					<li class="bullet">Working with bugs: localization, creating bug reports, verification of fixes</li>
-					<li class="bullet">Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</li>
-					<li class="bullet">Working in SCRUM team</li>
-				</ul>
+			<div class="position">
+				Head of QA Team
 			</div>
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>AnyLogic</span>
-					<span class="date">
-						2014-08 — 2018-07
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://the.anylogic.company">http://the.anylogic.company</a>
-				</div>
-				<div class="position">
-					QA Engineer
-				</div>
-				<div class="summary">
-					<p></p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Test planning, creating check-lists</li>
-					<li class="bullet">Manual testing of new functionality, regression testing</li>
-					<li class="bullet">Web application and desktop simulation modelling IDE testing</li>
-					<li class="bullet">Communication with developer team</li>
-					<li class="bullet">Participation in making of tasks list for the next release</li>
-					<li class="bullet">Introduced and maintained the testing process in the project (was solely responsible for all test activities)</li>
-					<li class="bullet">Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</li>
-				</ul>
+			<div class="website">
+				<a href="https://the.anylogic.company">https://the.anylogic.company</a>
 			</div>
+			<div class="summary">
+				<p>Руководила QA командой. Отвечала за качество двух продуктов. Планирование. Сама тестировала</p>
 			</div>
+			<ul class="highlights">
+				<li>Redefined company QA processes achieving a buiseness goal of focusing on product stability and comprehinsive quality control. Improved project workflows and Jira ticket culture.</li>
+				<li>Significantly reduced the ammount of issues escalated thru customer support.</li>
+				<li>Conducted over 30 job interviews resulted in hiring of eminent QA engineers.</li>
+				<li>Mentored junior QA engineers, held regular one-to-one check-ins, provided support and guidence helping the team to thrive. Improved onboarding process and documentation.</li>
+				<li>Coordinated new releases testing: issue triaging, optimal resouce allocation and utilization.</li>
+				<li>Worked in close collaboration with development teams, participated in new feature design.</li>
+				<li>Performed manual feature and bugfix testing, conducted regression testing.</li>
+				<li>Developed a set of automated API tests in Python.</li>
+				<li>Constant testing documentation perfection.</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3 class="name">
+				ALM Works
+			</h3>
+			<div class="date">
+				<span class="startDate">
+					2018-07
+				</span>
+				<span class="endDate">
+					- 2019-10
+				</span>
+			</div>
+			<div class="position">
+				QA Engineer
+			</div>
+			<div class="website">
+				<a href="https://www.almworks.com">https://www.almworks.com</a>
+			</div>
+			<ul class="highlights">
+				<li>Manual functional, regression and exploratory testing of web applications (add-ons for Jira)</li>
+				<li>Analysis and test design for functionalities under test</li>
+				<li>Working with bugs: localization, creating bug reports, verification of fixes</li>
+				<li>Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English</li>
+				<li>Working in SCRUM team</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3 class="name">
+				AnyLogic
+			</h3>
+			<div class="date">
+				<span class="startDate">
+					2014-08
+				</span>
+				<span class="endDate">
+					- 2018-07
+				</span>
+			</div>
+			<div class="position">
+				QA Engineer
+			</div>
+			<div class="website">
+				<a href="http://the.anylogic.company">http://the.anylogic.company</a>
+			</div>
+			<ul class="highlights">
+				<li>Test planning, creating check-lists</li>
+				<li>Manual testing of new functionality, regression testing</li>
+				<li>Web application and desktop simulation modelling IDE testing</li>
+				<li>Communication with developer team</li>
+				<li>Participation in making of tasks list for the next release</li>
+				<li>Introduced and maintained the testing process in the project (was solely responsible for all test activities)</li>
+				<li>Initiated regular review of tasks lists for big releases that happened every 3-6 months in order to introduce necessary changes in the planned tasks and, as the result, significantly reduced the number of releases that were postponed due to unmet aims</li>
+			</ul>
 		</div>
 	</section>
 
 	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>St. Petersburg State University, Saint Petersburg</span>
-					<span class="date">
-						 — 2012
-					</span>
-				</h4>
-				<div class="area">
-					Statistical Modelling, Applied Mathematics and Informatics
-				</div>
-				<div class="studyType">
-					
-				</div>
+	<section id="education">
+		<h2>Education</h2>
+		<div class="item">
+			<div class="date">
+				<span class="endDate">
+					- 2012
+				</span>
 			</div>
+			<div class="institution">
+				St. Petersburg State University, Saint Petersburg
+			</div>
+			<div class="area">
+				Statistical Modelling, Applied Mathematics and Informatics
 			</div>
 		</div>
 	</section>
 	
 	
 	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Testing</h4>
-				</div>
-				<ul class="keywords">
-					<li>Test Design</li>
-					<li>Test Plans</li>
-				</ul>
+	<section id="skills">
+		<h2>Skills</h2>
+		<div class="item">
+			<div class="name">
+				Testing
 			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Technical Skills</h4>
-				</div>
-				<ul class="keywords">
-					<li>git</li>
-					<li>Java</li>
-					<li>Python</li>
-					<li>Jira</li>
-				</ul>
+			<ul class="keywords">
+				<li>Test Design</li>
+				<li>Test Plans</li>
+			</ul>
+		</div>
+		<div class="item">
+			<div class="name">
+				Technical Skills
 			</div>
-			</div>
+			<ul class="keywords">
+				<li>git</li>
+				<li>Java</li>
+				<li>Python</li>
+				<li>Jira</li>
+			</ul>
 		</div>
 	</section>
 
 
 	
-
+	
 	</div>
 	
 	</body>
