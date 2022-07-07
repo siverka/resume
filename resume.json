@@ -19,20 +19,24 @@
   "work": [
     {
       "company": "AnyLogic",
+      "name": "AnyLogic",
       "position": "Head of QA Team",
       "website": "https://the.anylogic.company",
-      "startDate": "2019",
-      "endDate": "2022",
+      "url": "https://the.anylogic.company",
+      "startDate": "2019-10",
+      "endDate": "",
       "summary": "",
       "highlights": [
       ]
     },
     {
       "company": "ALM Works",
+      "name": "ALM Works",
       "position": "QA Engineer",
       "website": "https://www.almworks.com",
-      "startDate": "2018",
-      "endDate": "2019",
+      "url": "https://www.almworks.com",
+      "startDate": "2018-07",
+      "endDate": "2019-10",
       "summary": "",
       "highlights": [
         "Manual functional, regression and exploratory testing of web applications (add-ons for Jira)",
@@ -44,10 +48,12 @@
     },
     {
       "company": "AnyLogic",
+      "name": "AnyLogic",
       "position": "QA Engineer",
       "website": "http://the.anylogic.company",
-      "startDate": "2014",
-      "endDate": "2018",
+      "url": "http://the.anylogic.company",
+      "startDate": "2014-08",
+      "endDate": "2018-07",
       "summary": "",
       "highlights": [
         "Test planning, creating check-lists",
