@@ -6,7 +6,6 @@
     "email": "masha.dumanskaya@gmail.com",
     "phone": "+79811248428",
     "url": "",
-    "summary": "Very brilliant QA team lead and engineer's summary goes here",
     "location": {
       "address": "",
       "postalCode": "",
@@ -95,13 +94,13 @@
     {
       "name": "Testing",
       "level": "",
-      "keywords": ["Test Design", "Test Plans"
+      "keywords": ["Test Design", "Test Plans", "Работа с требованиями", "Обработка пользовательских инцидентов"
       ]
     },
     {
       "name": "Technical Skills",
       "level": "",
-      "keywords": ["git", "Java", "Python", "Jira"
+      "keywords": ["git", "Java", "Python", "Jira", "SQL", "shell"
       ]
     }
   ],
