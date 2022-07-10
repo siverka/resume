@@ -26,14 +26,14 @@ jobs:
       - uses: AlexDumanskiy/action-jsonresume-export@v4
         name: Export resume as HTML
         with:
-          theme: rocketspacer
+          theme: macchiato
           resume_filepath: resume.json
           output_format: html
           output_filepath: docs/index.html
       - uses: AlexDumanskiy/action-jsonresume-export@v4
         name: Export resume as PDF
         with:
-          theme: rocketspacer
+          theme: macchiato
           resume_filepath: resume.json
           output_format: pdf
           output_filepath: docs/${{ env.PDF_FILE }}
