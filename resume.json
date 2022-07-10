@@ -25,16 +25,16 @@
       "url": "https://the.anylogic.company",
       "startDate": "2019-10",
       "endDate": "",
-      "summary": "Руководила QA командой. Отвечала за качество двух продуктов. Планирование. Сама тестировала",
+      "summary": "Hired as the QA Team leader to bring AnyLogic products quality to the next level I am solely responsible for the testing processes, planing, and team prosperity. I feel great pride in my job and together with my leadership tasks I engage in daily performing manual testing routines.",
       "highlights": [
         "Redefined company QA processes achieving a buiseness goal of focusing on product stability and comprehinsive quality control. Improved project workflows and Jira ticket culture.",
         "Significantly reduced the ammount of issues escalated thru customer support.",
         "Conducted over 30 job interviews resulted in hiring of eminent QA engineers.",
         "Mentored junior QA engineers, held regular one-to-one check-ins, provided support and guidence helping the team to thrive. Improved onboarding process and documentation.",
-        "Coordinated new releases testing: issue triaging, optimal resouce allocation and utilization.",
-        "Worked in close collaboration with development teams, participated in new feature design.",
-        "Performed manual feature and bugfix testing, conducted regression testing.",
         "Developed a set of automated API tests in Python.",
+        "Coordinate new releases testing: issue triaging, optimal resouce allocation and utilization.",
+        "Work in close collaboration with development teams, participated in new feature design.",
+        "Perform manual feature and bugfix testing, conducted regression testing.",
         "Constant testing documentation perfection."
       ]
     },
@@ -48,11 +48,11 @@
       "endDate": "2019-10",
       "summary": "",
       "highlights": [
-        "Manual functional, regression and exploratory testing of web applications (add-ons for Jira)",
-        "Analysis and test design for functionalities under test",
-        "Working with bugs: localization, creating bug reports, verification of fixes",
-        "Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English",
-        "Working in SCRUM team"
+        "Manual functional, regression and exploratory testing of web applications (add-ons for Jira).",
+        "Analysis and test design for functionalities under test.",
+        "Working with bugs: localization, creating bug reports, verification of fixes.",
+        "Creating and maintenance of test documentation (check lists, mind maps, knowledge base) in English.",
+        "Working in SCRUM team."
       ]
     },
     {
