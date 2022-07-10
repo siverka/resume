@@ -24,14 +24,14 @@
       "url": "https://the.anylogic.company",
       "startDate": "2019-10",
       "endDate": "",
-      "summary": "Hired as the QA Team leader to bring AnyLogic products quality to the next level I am solely responsible for the testing processes, planing, and team prosperity. I feel great pride in my job and together with my leadership tasks I engage in daily performing manual testing routines.",
+      "summary": "Hired as the QA Team leader to bring AnyLogic products quality to the next level I am solely responsible for the testing processes, planning, and team prosperity. I feel great pride in my job and together with my leadership tasks I engage in daily performing manual testing routines.",
       "highlights": [
-        "Redefined company QA processes achieving a buiseness goal of focusing on product stability and comprehinsive quality control. Improved project workflows and Jira ticket culture.",
-        "Significantly reduced the ammount of issues escalated thru customer support.",
+        "Redefined company QA processes achieving a business goal of focusing on product stability and comprehensive quality control. Improved project workflows and Jira ticket culture.",
+        "Significantly reduced the number of issues escalated thru customer support.",
         "Conducted over 30 job interviews resulted in hiring of eminent QA engineers.",
-        "Mentored junior QA engineers, held regular one-to-one check-ins, provided support and guidence helping the team to thrive. Improved onboarding process and documentation.",
+        "Mentored junior QA engineers, held regular one-to-one check-ins, provided support and guidance helping the team to thrive. Improved onboarding process and documentation.",
         "Developed a set of automated API tests in Python.",
-        "Coordinate new releases testing: issue triaging, optimal resouce allocation and utilization.",
+        "Coordinate new releases testing: issue triaging, optimal resource allocation and utilization.",
         "Work in close collaboration with development teams, participated in new feature design.",
         "Perform manual feature and bugfix testing, conducted regression testing.",
         "Constant testing documentation perfection."
@@ -50,7 +50,7 @@
         "Manual functional, regression and exploratory testing of web applications (add-ons for Jira).",
         "Performed analysis and test design for functionalities under test.",
         "Worked with bugs: localization, creating bug reports, verification of fixes.",
-        "Created and maintenaned test documentation (check lists, mind maps, knowledge base).",
+        "Created and maintained test documentation (check lists, mind maps, knowledge base).",
         "Worked in a SCRUM team."
       ]
     },
@@ -64,7 +64,7 @@
       "endDate": "2018-07",
       "summary": "I joined AnyLogic company as a simulation model developer promptly focusing on finding bugs in a newly created modeling library. Attention to detail and aptitude with complex systems proved me being a natural at QA even further when taking part in delivering many successful releases.",
       "highlights": [
-        "Created check-lists and test plans.",
+        "Created checklists and test plans.",
         "Manually tested new functionality, preformed regression testing.",
         "Web application and desktop simulation modelling IDE testing.",
         "Communication with developer team.",
@@ -94,13 +94,23 @@
     {
       "name": "Testing",
       "level": "",
-      "keywords": ["Test Design", "Test Plans", "Работа с требованиями", "Обработка пользовательских инцидентов"
+      "keywords": [
+        "Test Design",
+        "Test Plans",
+        "Requirement Analysis",
+        "Incident Management"
       ]
     },
     {
       "name": "Technical Skills",
       "level": "",
-      "keywords": ["git", "Java", "Python", "Jira", "SQL", "shell"
+      "keywords": [
+        "git",
+        "Java",
+        "Python",
+        "Jira",
+        "SQL",
+        "shell"
       ]
     }
   ],
