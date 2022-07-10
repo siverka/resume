@@ -95,13 +95,13 @@
     {
       "name": "Testing",
       "level": "",
-      "keywords": ["Test Design", "Test Plans"
+      "keywords": ["Test Design", "Test Plans", "Работа с требованиями", "Обработка пользовательских инцидентов"
       ]
     },
     {
       "name": "Technical Skills",
       "level": "",
-      "keywords": ["git", "Java", "Python", "Jira"
+      "keywords": ["git", "Java", "Python", "Jira", "SQL", "shell"
       ]
     }
   ],
