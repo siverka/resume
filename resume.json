@@ -45,12 +45,12 @@
       "url": "https://www.almworks.com",
       "startDate": "2018-07",
       "endDate": "2019-10",
-      "summary": "ALM Works creates complex plug-ins for JIRA used by tens of thousands software developers across the globe. Here I brought my software testing skills to enterprise level, forging my vision of what quality is and how it should be maintained. I also gained deep experience in JIRA product, software developing workflows, and SCRUM principles.",
+      "summary": "ALM Works company builds complex plug-ins for JIRA used by tens of thousands software developers across the globe. Here I brought my software testing skills to enterprise level, forging my vision of what quality is and how it should be maintained. I also gained deep experience in JIRA product, software developing workflows, and SCRUM principles.",
       "highlights": [
         "Manual functional, regression and exploratory testing of web applications (add-ons for Jira).",
         "Performed analysis and test design for functionalities under test.",
         "Worked with bugs: localization, creating bug reports, verification of fixes.",
-        "Created and maintained test documentation (check lists, mind maps, knowledge base).",
+        "Created and maintained test documentation: checklists, mind maps, knowledge base.",
         "Worked in a SCRUM team."
       ]
     },
@@ -62,15 +62,15 @@
       "url": "http://the.anylogic.company",
       "startDate": "2014-08",
       "endDate": "2018-07",
-      "summary": "I joined AnyLogic company as a simulation model developer promptly focusing on finding bugs in a newly created modeling library. Attention to detail and aptitude with complex systems proved me being a natural at QA even further when taking part in delivering many successful releases.",
+      "summary": "I joined AnyLogic company as a simulation model developer promptly focusing on finding bugs in a newly created modeling library. Attention to detail and aptitude with complex systems proved me being a natural at QA even further taking part in delivering many successful releases.",
       "highlights": [
-        "Created checklists and test plans.",
         "Manually tested new functionality, preformed regression testing.",
         "Web application and desktop simulation modelling IDE testing.",
+        "Created checklists and test plans.",
         "Communication with developer team.",
-        "Participated in making of tasks list for the next release.",
-        "Introduced and maintained the testing process in the project (was solely responsible for all test activities).",
-        "Initiated regular review of tasks lists for large releases happening every 3-6 months introducing necessary changes in planned tasks and, significantly reducing the number of releases postponed due to unmet goals."
+        "Participated in making lists of tasks for the next release.",
+        "Introduced and maintained the testing process in the project, was solely responsible for all test activities.",
+        "Initiated regular review of tasks lists for large releases introducing necessary changes in planned tasks and significantly reducing the number of releases postponed due to unmet goals."
       ]
     }
   ],
