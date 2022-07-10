@@ -17,8 +17,8 @@
   },
   "work": [
     {
-      "company": "AnyLogic",
-      "name": "AnyLogic",
+      "company": "The AnyLogic Company",
+      "name": "The AnyLogic Company",
       "position": "Head of QA Team",
       "website": "https://the.anylogic.company",
       "url": "https://the.anylogic.company",
@@ -55,8 +55,8 @@
       ]
     },
     {
-      "company": "AnyLogic",
-      "name": "AnyLogic",
+      "company": "The AnyLogic Company",
+      "name": "The AnyLogic Company",
       "position": "QA Engineer",
       "website": "http://the.anylogic.company",
       "url": "http://the.anylogic.company",
@@ -67,7 +67,7 @@
         "Manually tested new functionality, preformed regression testing.",
         "Web application and desktop simulation modelling IDE testing.",
         "Created checklists and test plans.",
-        "Communication with developer team.",
+        "Communicated with the development team.",
         "Participated in making lists of tasks for the next release.",
         "Introduced and maintained the testing process in the project, was solely responsible for all test activities.",
         "Initiated regular review of tasks lists for large releases introducing necessary changes in planned tasks and significantly reducing the number of releases postponed due to unmet goals."
@@ -105,12 +105,13 @@
       "name": "Technical Skills",
       "level": "",
       "keywords": [
-        "git",
+        "Jira",
         "Java",
         "Python",
-        "Jira",
+        "Postman",
         "SQL",
-        "shell"
+        "shell",
+        "git"
       ]
     }
   ],
