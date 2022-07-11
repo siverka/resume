@@ -113,6 +113,18 @@
         "shell",
         "git"
       ]
+    },
+    {
+      "name": "Leadership",
+      "level": "",
+      "keywords": [
+        "Conduct Interviews",
+        "Hold 1:1 Meetings",
+        "Release Planning",
+        "Communication",
+        "Delegation",
+        "Mentoring"
+      ]
     }
   ],
   "languages": [],
